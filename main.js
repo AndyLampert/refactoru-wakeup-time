@@ -2,7 +2,7 @@ $(document).on('ready', function() {
 	// VARAIBLE DECLARATIONS
 	var outerShell = $('<div class="outer-shell"></div>');
 	var innerShell = $('<div class="inner-shell"></div>');
-	var clockScreen = $('<div class="clock-screen"><span class="hours"></span><span id="colon">:<span class="minutes"></span></div>');
+	var clockScreen = $('<div class="clock-screen"><span class="hours"></span><span id="colon">:</span><span class="minutes"></span></div>');
 	var clockampm = $('<div class="clock-ampm"><ul><li class="am-notifier">AM</li><li class="pm-notifier">PM</li></ul></div>');
 	var amLabel = $('<div class="am-label">AM 53 60 70 90 110 140 170</div>');
 	var fmLabel = $('<div class="fm-label">FM 88 92 96 102 106 108</div>');
@@ -16,10 +16,10 @@ $(document).on('ready', function() {
 	innerShell.append(fmLabel);
 
 	// when AM, add active class + remove from PM
-	
 
 	// updating the time real time
 
+	var showColon = true;
 	var updateTime = function() {
 
 		var currentDate = new Date();
@@ -34,10 +34,18 @@ $(document).on('ready', function() {
 			$('.am-notifier').addClass('active');
 			$('.pm-notifier').removeClass('active');
 		}
+
 		// updating the time real time
-		$('.clock-screen').text( moment().format("hh:mm") );
+		// the time (hour, colon, min) in one line
+		// $('.clock-screen').text( moment().format("hh" + ( (showColon)? ":" : " ") + "mm") );
+		// the time in 3 separate span tags
+		$('.clock-screen .hours').text(moment().format('hh'));
+ 		$('.clock-screen .minutes').text(moment().format('mm'));
+ 		$('#colon').css('visibility', (showColon)? "visible" : "hidden");
+		// this inverts the value 
+		showColon = !showColon;
 	}
-	
+
 	updateTime();
 
 	setInterval(updateTime, 1000);
