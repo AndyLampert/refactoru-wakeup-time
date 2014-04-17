@@ -36,9 +36,7 @@ body {
 
 .clock-screen {
   color: darkred;
-}
-.clock-screen p {
-  font-size: 3rem;
+  font-size: 13rem;
 }
 
 .clock-text {

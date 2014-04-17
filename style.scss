@@ -38,9 +38,7 @@ body {
 
 .clock-screen {
 	color: darkred;
-	p {
-		font-size: 3rem;
-	}
+	font-size: 13rem;
 }
 
 .clock-text {
@@ -56,3 +54,11 @@ body {
 	clear: both;
 }
 
+// clock hours/min
+.hours,
+.minutes {
+	
+}
+.colon {
+
+}
