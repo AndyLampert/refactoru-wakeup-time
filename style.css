@@ -1,0 +1,51 @@
+html, p {
+  margin: 0;
+  padding: 0;
+  color: red;
+}
+
+body {
+  width: 100%;
+}
+
+.outer-shell {
+  width: 80%;
+  height: 400px;
+  background-color: #615853;
+  display: block;
+  margin: 10% auto;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.inner-shell {
+  background-color: black;
+  height: 100%;
+}
+
+.clock-ampm {
+  color: white;
+  float: left;
+}
+.clock-ampm li {
+  list-style-type: none;
+}
+.clock-ampm .active {
+  background-color: blue;
+}
+
+.clock-screen {
+  color: darkred;
+}
+.clock-screen p {
+  font-size: 3rem;
+}
+
+.clock-text {
+  color: red;
+}
+
+.am-label,
+.fm-label {
+  clear: both;
+}

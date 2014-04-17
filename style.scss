@@ -1,0 +1,58 @@
+$darkgrey: #615853; 
+
+html, p {
+    margin: 0;
+    padding: 0;
+    color: red;
+}
+
+body {
+    width: 100%;
+}
+
+.outer-shell {
+    width: 80%;
+    height: 400px;
+    background-color: $darkgrey;
+    display: block;
+    margin: 10% auto;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.inner-shell {
+	background-color: black;
+	height: 100%;
+}
+
+.clock-ampm {
+	color: white;
+	float: left;
+	li {
+		list-style-type: none;
+	}
+	.active {
+		background-color: blue;
+	}
+}
+
+.clock-screen {
+	color: darkred;
+	p {
+		font-size: 3rem;
+	}
+}
+
+.clock-text {
+	color: red;
+}
+
+.bottom-row {
+
+}
+
+.am-label, 
+.fm-label {
+	clear: both;
+}
+
