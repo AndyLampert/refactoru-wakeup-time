@@ -21,22 +21,36 @@ body {
 .inner-shell {
   background-color: black;
   height: 100%;
+  position: relative;
 }
 
 .clock-ampm {
   color: white;
   float: left;
+  margin: 2rem;
+}
+.clock-ampm ul {
+  padding: 0;
 }
 .clock-ampm li {
   list-style-type: none;
 }
 .clock-ampm .active {
   background-color: blue;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.pm-notifier {
+  padding: 1rem;
 }
 
 .clock-screen {
+  background-color: rgba(132, 45, 16, 0.4);
   color: darkred;
   font-size: 13rem;
+  width: 90%;
+  border-radius: 40px;
 }
 
 .clock-text {
@@ -46,4 +60,16 @@ body {
 .am-label,
 .fm-label {
   clear: both;
+  margin: 1rem;
+}
+.am-label ul li,
+.fm-label ul li {
+  padding-left: 2rem;
+  color: white;
+  list-style-type: none;
+  display: inline-block;
+}
+.am-label ul li:first,
+.fm-label ul li:first {
+  padding-left: 2rem;
 }

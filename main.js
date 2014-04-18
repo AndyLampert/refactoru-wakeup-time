@@ -4,8 +4,8 @@ $(document).on('ready', function() {
 	var innerShell = $('<div class="inner-shell"></div>');
 	var clockScreen = $('<div class="clock-screen"><span class="hours"></span><span id="colon">:</span><span class="minutes"></span></div>');
 	var clockampm = $('<div class="clock-ampm"><ul><li class="am-notifier">AM</li><li class="pm-notifier">PM</li></ul></div>');
-	var amLabel = $('<div class="am-label">AM 53 60 70 90 110 140 170</div>');
-	var fmLabel = $('<div class="fm-label">FM 88 92 96 102 106 108</div>');
+	var amLabel = $('<div class="am-label"><ul><li>AM</li> <li>53</li> <li>60</li> <li>70</li> <li>90</li> <li>110</li> <li>140</li> <li>170</li></ul></div>');
+	var fmLabel = $('<div class="fm-label"><ul><li>FM</li> <li>88</li> <li>92</li> <li>96</li> <li>102</li> <li>106</li> <li>108</li></ul></div>');
 
 	// CREATING STRUCTURE VIA JQUER
 	$('body').append(outerShell);

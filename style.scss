@@ -23,22 +23,35 @@ body {
 .inner-shell {
 	background-color: black;
 	height: 100%;
+	position: relative;
 }
 
 .clock-ampm {
 	color: white;
 	float: left;
+	margin: 2rem;
+	ul {
+		padding: 0;
+	}
 	li {
 		list-style-type: none;
 	}
 	.active {
 		background-color: blue;
+		border-radius: 6px;
+		padding: 1rem;
 	}
 }
 
+.pm-notifier{
+	padding: 1rem;
+}
 .clock-screen {
+	background-color: rgba(132,45,16,.4);
 	color: darkred;
 	font-size: 13rem;
+	width: 90%;
+	border-radius: 40px;
 }
 
 .clock-text {
@@ -52,6 +65,16 @@ body {
 .am-label, 
 .fm-label {
 	clear: both;
+	margin: 1rem;
+	ul li {
+		padding-left: 2rem;
+		color: white;
+		list-style-type: none;
+		display: inline-block;
+		&:first {
+			padding-left: 2rem;
+		}
+	}
 }
 
 // clock hours/min
